@@ -1,0 +1,44 @@
+{% extends 'main/Based.html' %}
+
+{%block background%}
+id="bg" style="background-color: powderblue"
+{%endblock%}
+
+{% block title %}
+Здоровье
+{% endblock %}
+
+{% block page %}
+class="nav-link active" aria-current="page"
+{% endblock %}
+
+{% block page2 %}
+class="nav-link"
+{% endblock %}
+
+{% block page3 %}
+class="nav-link"
+{% endblock %}
+
+{%block page4%}
+class="nav-link"
+{%endblock%}
+
+
+
+{% block content %}
+<div class="d-flex h-100 text-left text-bg-white" >
+  <main class="px-3">
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1><br></h1>
+    <h1> <b> <big> <big> <big>Квинтилиан</big> </big> </big></b> </h1>
+    <p class="lead"> <b> <big> <big>  Для тех, кто следит за своим здоровьем   </big>  </big> </b> </p>
+    <p class="lead">
+      <a href="{% url 'health' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big>  <big> <big> АНКЕТА ЗДОРОВЬЯ</big> </big> </big> </big> </big>  </a>
+    </p>
+  </main>
+</div>
+{% endblock %}

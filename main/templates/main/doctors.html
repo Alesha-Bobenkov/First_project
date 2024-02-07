@@ -1,0 +1,59 @@
+{% extends 'main/Based.html' %}
+
+{% block title %}
+Здоровье
+{% endblock %}
+
+
+{% block page %}
+class="nav-link"
+{% endblock %}
+
+{% block page2 %}
+class="nav-link"
+{% endblock %}
+
+{%block page4%}
+class="nav-link active" aria-current="page"
+{%endblock%}
+
+{% block page3 %}
+class="nav-link"
+{% endblock %}
+
+{%block background%}
+id="bg" style="background-color: powderblue"
+{%endblock%}
+
+{% block content %}
+<h1><br></h1>
+<h1> <b> Выберите врача и посмотрите где он находится в вашем городе! </b> </h1>
+<h1><br></h1>
+<p class="lead h-100 text-center text-bg-white ">
+  <a href="{% url 'therapist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> терапевт </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'gastroenterologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> гастроэнтеролог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'ophthalmologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> офтальмолог </big> </big> </big> </big> </big> </a>
+</p>
+<p class="lead h-100 text-center text-bg-white ">
+  <a href="{% url 'obstetriciangynecologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> акушер-гинеколог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'infectious' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> инфекционист </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'neurologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> невролог </big> </big> </big> </big> </big> </a>
+</p>
+<p class="lead h-100 text-center text-bg-white ">
+  <a href="{% url 'endocrinologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> эндокринолог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'cardiologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> кардиолог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'surgeon' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> хирург </big> </big> </big> </big> </big> </a>
+</p>
+<p class="lead h-100 text-center text-bg-white ">
+  <a href="{% url 'otorhinolaryngologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> оториноларинголог (ЛОР) </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'traumatologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> травматолог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'urologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> уролог </big> </big> </big> </big> </big> </a>
+</p>
+<p class="lead h-100 text-center text-bg-white ">
+  <a href="{% url 'oncologist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> онколог </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'psychiatrist' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> психиатр </big> </big> </big> </big> </big> </a>
+  <a href="{% url 'pediatrician' %}" class="btn btn-lg btn-light fw-bold border-white bg-white"> <big> <big> <big> <big> <big> педиатр </big> </big> </big> </big> </big> </a>
+</p>
+{% endblock %}
+
+
